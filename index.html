@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .carousel {
+            margin: auto;
+            width: 50%;
+            height: 50vh;
+            border-radius: 20px;
+        }
+        .carousel-cell {
+            height: 100%;
+            width: 100%;
+        }
+        img{
+            width: inherit;
+            height: 100%;
+        }
+        .flickity-viewport{
+            border-radius: 20px !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">Example Flickity Slider</h1>
+    <div class="carousel">
+        <div class="carousel-cell">
+            <img src="https://images.unsplash.com/photo-1590573124389-83f2133e0307?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1140&q=80" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://images.unsplash.com/photo-1587493776101-098fa8b9c36c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://images.unsplash.com/photo-1590615216008-8921f03835d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="">
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js'></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        $('.carousel').flickity({
+            // options
+            setGallerySize: false,
+            wrapAround: true,
+            cellAlign: 'left',
+        });
+    </script>
+</body>
+</html>
