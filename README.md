@@ -1,5 +1,3 @@
-# Example Flickity Carousel
-
 <img align="center" src="screenshot.png"/>
 
 # License
